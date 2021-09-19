@@ -34,6 +34,7 @@ def receive_trdata(screen_no, rqname, trcode, recordname, prev_next, data_len, e
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     win = QMainWindow()
+    win.show()
     
     kw_api = QAxWidget("KHOPENAPI.KHOpenAPICtrl.1")
     ret = kw_api.dynamicCall("CommConnect()")
